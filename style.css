@@ -64,3 +64,44 @@ body {
 #member5 { top: 280px; left: 600px; }  /* Far right */
 #member6 { top: 400px; left: 250px; }  /* Bottom left */
 #member7 { top: 400px; left: 430px; }  /* Bottom right */
+
+/* SVG overlay for connection lines */
+.link-layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* allow clicks to pass through to boxes */
+}
+
+/* path style for family links */
+.link-path {
+    stroke: #4a3c2a;
+    stroke-width: 3;
+    fill: none;
+    opacity: 0.85;
+}
+
+/* drag visual feedback */
+.member {
+    cursor: grab;
+}
+.member.dragging {
+    cursor: grabbing;
+    box-shadow: 4px 8px 14px rgba(0,0,0,0.35);
+}
+
+/* toolbar buttons (Reset/Add/Link Mode/Clear Lines) */
+.toolbar button {
+    padding: 8px 12px;
+    border: 1px solid #8b5e3c;
+    background: #fff8dc;
+    color: #4a3c2a;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.toolbar button.active {
+    background: #e9d7b2;
+    font-weight: bold;
+}
