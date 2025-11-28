@@ -1,113 +1,66 @@
-/* General Page Styling */
+/* Reset some default styles */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Container for the tree */
+.tree-container {
     text-align: center;
-}
-
-header {
-    background: #4CAF50;
-    color: white;
     padding: 20px;
-    font-size: 1.5em;
 }
 
-.upload-section {
-    margin: 20px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    display: inline-block;
+/* Title */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4a3c2a;
+    margin-bottom: 20px;
 }
 
-.upload-section input[type="file"] {
-    margin-bottom: 10px;
-}
-
-.upload-section button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.upload-section button:hover {
-    background: #45a049;
-}
-
-/* Preview Section */
-.preview {
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.preview img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    border: 3px solid #4CAF50;
-}
-
-/* Tree Section */
+/* Tree background */
 .tree {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background: url('images/tree-background.png') no-repeat center center;
+    background-size: contain;
 }
 
-.node {
-    border: 2px solid #333;
-    padding: 10px;
-    margin: 10px;
+/* Family member boxes */
+.member {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    background-color: #fff8dc;
+    border: 3px solid #8b5e3c;
     border-radius: 10px;
-    background: #fff;
-    width: 150px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 5px;
 }
 
-.node img {
+.member img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
-    border: 2px solid #4CAF50;
 }
 
-.node input {
-    width: 90%;
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-.tree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+.member p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a3c2a;
 }
 
-.level {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.connector {
-    width: 2px;
-    background: #333;
-    height: 20px;
-    margin: auto;
-}
+/* Positioning members like a tree */
+#member1 { top: 50px; left: 340px; }   /* Top center */
+#member2 { top: 150px; left: 180px; }  /* Left branch */
+#member3 { top: 150px; left: 500px; }  /* Right branch */
+#member4 { top: 280px; left: 80px; }   /* Far left */
+#member5 { top: 280px; left: 600px; }  /* Far right */
+#member6 { top: 400px; left: 250px; }  /* Bottom left */
+#member7 { top: 400px; left: 430px; }  /* Bottom right */
