@@ -1,0 +1,113 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.upload-section {
+    margin: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+.upload-section input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.upload-section button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.upload-section button:hover {
+    background: #45a049;
+}
+
+/* Preview Section */
+.preview {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #4CAF50;
+}
+
+/* Tree Section */
+.tree {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.node {
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #fff;
+    width: 150px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.node img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+}
+
+.node input {
+    width: 90%;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.connector {
+    width: 2px;
+    background: #333;
+    height: 20px;
+    margin: auto;
+}
